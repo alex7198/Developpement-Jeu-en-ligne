@@ -1,0 +1,57 @@
+1 : Créer un compte sur GitLab : https://gitlab.com/
+2 : Envoyer son pseudo sur la conversation
+3 : Télécharger git :
+	- Sur windows : https://gitforwindows.org/
+	- Sur linux : sudo apt install git-all
+Quelques commandes git : 
+	Spécifier son adresse mail à git (obligatoire et à réaliser lors de la première utilisation de git) : git config --global user.email "adresseMail"
+	Récupérer le projet qui est sur le dépôt : git clone https://gitlab.com/alex9871/projet_web.git
+	Pour sélectionner les fichiers du projet que l'on a modifié et que l'on veut intégrer sur le dépôt : git add cheminFichier ( * pour ajouter tous les fichiers). Attention cette commande n'ajoute pas directement les fichiers sur le dépôt. Elle permet seulement de sélectionner quels fichiers sont à ajouter.
+	Pour confirmer l'ajout des fichiers : git commit -m "Description de la modification effectuée" : Attention cette commande n'ajoute pas directement les fichiers sur le dépôt. Elle permet seulement de valider l'ajout des fichiers sur le dépôt.
+	Pour ajouter les fichiers sur le dépôt (enfin !!) : git push. 
+	Pour mettre à jour son dossier avec les mises à jour disponibles sur le dépot : Se placer dans le dossier où l'on a fait un git clone auparavant.
+											Taper la commande : git pull.
+
+Git utilise un système de branche pour gérer les différentes version d'un projet. Tout projet possède une branche principale (branche master) sur laquelle une version "stable" du
+projet est disponible. C'est une version sur laquelle il n'y a aucun bug normalement.Elle est commune à tous les membres du projet. 
+Quand on veut développer une nouvelle fonctionnalité pour un projet, on crée une nouvelle branche sur laquelle on va pouvoir travailler. Par exemple, si l'on veut développer une nouvelle 
+page pour notre site, on va créer une branche "creation_page_principale". Cette branche permettera à celui rattaché à cette tâche de pouvoir développer de son côté cette fonctionnalité, 
+en faisant des tests sans que cela pose de problèmes aux autres membres du projet. Une fois que sa tâche est terminée, il pourra alors relier la branche sur laquelle il a travaillé avec la 
+branche "master" commune à tous les membres du projet.
+
+Voici les commandes à utiliser pour manipuler les branches dans git :
+	git branch nomBranche : créer une branche
+		ex : git branch creation_page_principale : création de la branche "creation_page_principale"
+	git branch : pour vérifier sur quelle branche on est actuellement
+	git checkout nomBranche : basculer d'une branche à une autre . 
+		ex : git chechout master : on bascule sur la branche master.
+	git merge nomBranche : pour relier deux branches.
+		ex : git merge creation_page_principale : relie la branche sur laquelle on est placée avec la branche "creation_page_principale"
+	git push -u origin maBranche : à utiliser seulement lorsque l'on vient de créer une nouvelle branche. Permet de mettre le projet disponible sur le master
+	dans la branche que l'on vient de créer.
+
+Exemple :
+	Je veux créer une nouvelle page HTML (page_pincipale dans mon projet). 
+	J'ouvre un terminal, je suis dans le dossier de mon projet et je fais les commandes suivantes :
+	1/Création de la branche : git branch creation_page_principale
+	2/Changement de branche : git checkout creation_page_principale
+	3/Je mets le contenu de la branche master dans la branche creation_page_principale : git push -u origin creation_page_principale
+	En admettant que j'ai travaillé sur la tâche...
+	4/Je remets le travail que j'ai effectué sur la branche :
+		git add *
+		git commit -m "début page principale"
+		git push
+	En admettant que j'ai finis mon travail (à faire uniquement quand on est sûr qu'il n'y ai pas de problèmes):
+	Je relis ma branche avec le master :
+		On se place sur le master : git checkout master
+		On relie : git merge creation_page_principale
+	Je mets en ligne les modifications : git push
+
+Attention, quand on travaille sur le projet, il faut bien vérifier que l'on est sur la bonne branche. Sinon, ça va poser des problèmes. ( git branch pour vérifier).
+	
+
+	
+  
+Utilisation de git : 
+	http://rogerdudler.github.io/git-guide/
+	

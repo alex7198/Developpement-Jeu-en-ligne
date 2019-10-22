@@ -1,0 +1,351 @@
+
+#img_logo1, #img_logo2{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+
+#titre{
+  margin-bottom: 17px;
+  margin-top: 0;
+  display: inline-block;
+  color: white;
+  font-family: "Segoe ui";
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+header,footer{
+  background-color: rgba(20, 124, 229,0.8);
+  text-align: center;
+  min-width: 500px;
+}
+
+footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  vertical-align: center;
+  clear: right;
+}
+
+body{
+  font-family: "Segoe ui";
+  min-width: 900px;
+  height: 100%;
+}
+
+#body_accueil{
+  min-height: 450px;
+}
+
+html{
+  height: 100%;
+}
+
+.sec_contenu{
+  background-color: rgb(234, 234, 225);
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 8%;
+  margin-right: 8%;
+
+  }
+
+#sec_jeu{
+  background-color: rgb(234, 234, 225);
+  padding-left: 7.75%;
+  padding-right: 7.75%;
+  margin-left: 8%;
+  margin-right: 8%;
+  height: 100%;
+}
+
+#h_creation, #p_btn_creation, #h_admin, #h_partie_creation,#h_partie_attente{
+  display: inline;
+}
+
+#h_admin{
+  text-align: center;
+}
+
+#sec_accueil, #sec_creation{
+  text-align: center;
+}
+
+
+.btn_co{
+  display: inline-block;
+  font-family: "Segoe ui";
+  font-size: 20px;
+  color: white;
+  background-color: rgba(20, 124, 229,0.8);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left : 30px;
+  padding-right : 30px;
+  margin-bottom: 5.5%;
+}
+
+.btn_co:disabled{
+  display: inline-block;
+  font-family: "Segoe ui";
+  font-size: 20px;
+  color: white;
+  background-color: rgba(66, 66,155,0.8);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left : 30px;
+  padding-right : 30px;
+  margin-bottom: 5.5%;
+}
+
+.btn_principal{
+  display: block;
+  font-family: "Segoe ui";
+  font-size: 30px;
+  color: white;
+  background-color: rgba(20, 124, 229,0.8);
+  margin-right: 50px;
+}
+
+#btn_creation, #btn_rejoindre{
+  width: 450px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  display: inline-block;
+}
+
+#btn_creation{
+  margin-top: 18%;
+}
+
+#btn_rejoindre{
+  margin-bottom: 18%;
+}
+
+
+#form_insc{
+  font-family: 'Segoe ui';
+  font-size: 20px;
+  }
+
+#p_pseudo{
+  margin-top: 5%;
+}
+
+
+.input_connection{
+  font-size:20px;
+  vertical-align: top;
+  width: 55%;
+  height: 35px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.label_connection{
+    font-size: 20px;
+    display: inline-block;
+    width: 170px;
+    font-family: 'Segoe ui';
+    text-align: left;
+}
+
+#label_partiePrivee
+{
+  width: 135px;
+}
+
+.label_standard{
+  font-size: 25px;
+  display: inline-block;
+}
+
+.input_standard{
+  width: 50%;
+  display: inline-block;
+  height: 25px;
+  font-size: 25px;
+}
+
+#label_partiePublique
+{
+  width: 150px;
+}
+
+
+.p_connection{
+  padding-bottom: 5px;
+  margin-bottom: 5.5%;
+}
+
+.p_creation{
+  margin-bottom: 4.2%;
+}
+
+#btn_valider{
+  margin-bottom: 9%;
+}
+
+#div_button{
+  text-align: center;
+}
+
+
+#div_btn_co{
+  margin_top:25%;
+}
+
+#div_deconnexion{
+  float: right;
+  width: 17.5%;
+}
+
+#div_admin_button{
+  float: right;
+  width: 17.5%;
+}
+
+#div_pseudo{
+  float: left;
+  width: 65%;
+}
+
+#lab_user
+{
+  font-size: 20px;
+  font-family: "Segoe ui";
+}
+
+.btn_gris{
+  background-color: rgb(153, 156, 159);
+  font-family: "Segoe ui";
+  font-size: 18px;
+}
+
+#div_button2, #div_connexion, #div_admin_button{
+  display: inline-block;
+  float:left;
+  margin: 0%;
+}
+
+.div_table_container{
+  height: 24.5%;
+  overflow: auto;
+  background-color:rgba(0, 0, 0,0.2);
+}
+
+.input_cle{
+    width: 70%;
+    height: 30px;
+    margin-left: 7%;
+}
+
+#enAttente td, #enCours td{
+    width: 15%;
+}
+
+#enCours td{
+  width: 10%;
+}
+
+#enCours .td_enCours_typePartiePrivée {
+    width: 15%;
+}
+
+#tab_joueur td{
+  width: 50%;
+  font-size: 25px;
+
+}
+
+#div_tab_joueur{
+  height: 180px;;
+  margin-top: 20px;
+}
+
+#p_recherche{
+  margin_top:30px;
+  text-align: center
+}
+
+#label_motif{
+  margin-top: 10px;
+}
+#textarea_ban{
+  width: 100%;
+  font-size: 20px;
+  height: 30%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0,0.2);
+}
+
+#btn_valider_ban{
+  float: right;
+  font-size: 25px;
+  margin-right: 0px;
+}
+
+#label_nbJoueurs{
+  float:left;
+  width: 20%;
+  margin-top: 20px;
+}
+
+#h_partie_creation{
+  float: left;
+  width: 80%;
+}
+
+
+#btn_quitter,#btn_lancer{
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+
+#btn_quitter_jeu{
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+#div_quitter_jeu{
+  text-align: right;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#scene{
+  text-align: center;
+}
+
+#btn_page_prec{
+  margin-bottom: 2%;
+  font-size: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+#quitter{
+  margin-bottom:1%;
+}
+
+.form_btn_accueil{
+  display: inline-block;
+}
+
+#label_erreur{
+  color: red;
+}
+
+#h_validation_compte,#h_notification{
+  display: inline-block;
+}
+
+#div_validation_compte{
+  text-align: center;
+}

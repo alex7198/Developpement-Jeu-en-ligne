@@ -1,0 +1,1 @@
+Importer le script projetweb dans phpmyadmin pour avoir la base de données

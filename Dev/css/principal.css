@@ -1,0 +1,33 @@
+#btn_creation{
+  padding: 20px 39px;
+  text-align: center;
+  display: inline-block;
+}
+
+#btn_rejoindre{
+  padding: 20px 29px;
+  text-align: center;
+  display: inline-block;
+}
+
+#group_button{
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 37%;
+}
+
+#div_admin_button{
+  float: right;
+  width: 10%;
+}
+
+#div_pseudo{
+  float: left;
+  width: 90%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
